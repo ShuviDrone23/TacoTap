@@ -1,0 +1,4 @@
+Nombre: Karla Hiromi García Álvarez
+
+Rol:
+Diseño de interfaz y documentación del proyecto TacoTap.
