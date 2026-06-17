@@ -1,0 +1,4 @@
+Nombre: Luis Javier Pérez Morales
+
+Rol:
+Diseño de base de datos, integración de servicios y control del repositorio GitHub del proyecto TacoTap.
