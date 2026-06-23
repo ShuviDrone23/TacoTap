@@ -1,0 +1,50 @@
+name: CI TacoTap
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+      - 'feature/**'
+
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar código del repositorio
+        uses: actions/checkout@v4
+
+      - name: Verificar archivos del proyecto
+        run: |
+          echo "Revisando estructura del repositorio TacoTap..."
+          ls -la
+
+      - name: Validar que exista README
+        run: |
+          test -f README.md
+
+      - name: Análisis básico de archivos de texto
+        run: |
+          echo "Revisando archivos .md y .txt..."
+          find . -name "*.md" -o -name "*.txt"
+
+      - name: Simular build de la app
+        run: |
+          echo "Build simulado de TacoTap"
+          echo "Aquí se compilaría la app Android cuando ya exista el proyecto en Kotlin/Android Studio"
+
+      - name: Simular pruebas automáticas
+        run: |
+          echo "Pruebas simuladas"
+          echo "Aquí se probaría login, menú, carrito y pedidos"
+
+      - name: Simular análisis estático
+        run: |
+          echo "Análisis estático simulado"
+          echo "Aquí se revisaría calidad del código, errores y buenas prácticas"
