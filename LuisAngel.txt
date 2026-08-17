@@ -1,0 +1,4 @@
+Nombre: Luis Ángel Amaro Escobar
+
+Rol:
+Desarrollo de la lógica de negocio y gestión de pedidos de la aplicación TacoTap.
